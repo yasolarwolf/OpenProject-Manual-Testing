@@ -13,5 +13,7 @@ QA : Fehler, Checklisten, Testfälle
 | EXPECTED RESULT | Das System validiert die Eingabe korrekt (zeigt Fehler an oder begrenzt den Wert). Die Datenintegrität bleibt erhalten. |
 | ACTUAL RESULT | Das Feld "Verbleibende Arbeit" zeigt 9999999999999998 (zeigt 15 Neunen und eine Acht am Ende). Die Zahl wird falsch gerundet/berechnet. |
 
+![Bug Screenshot](bug_overflow_OP_001.png)
+
 
 
