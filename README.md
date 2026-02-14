@@ -12,7 +12,7 @@ QA : Fehler, Checklisten, Testfälle
 | WHEN | 1.Der Benutzer gibt den Wert 9999999999999999 (16 Neunen) in das Feld "Work" ein. 2. Der Benurzer beobachtet die automatische Berechnung des Feldes "Remaining Work".3 Der Benutzer klickt auf das Häkchen "Save"|
 | EXPECTED RESULT | Das System validiert die Eingabe korrekt (zeigt Fehler an oder begrenzt den Wert). 2. Nach dem Speichern muss der ursprüngliche Wert 9999999999999999 im Feld "Work" unverändert bleiben. |
 | ACTUAL RESULT | Das Feld "Remaining Work" zeigt den gegründeten Wert 9999999999999998 an (15 Neunen und eine Acht am Ende). Die Zahl wird falsch gerundet/berechnet. 2. Nach dem Speichern wird auch der Wert "Work" überschrieben und auf 9999999999999998 (15 Neunen und eine Acht am Ende) geändert. |
-| Environment | Browser Brave, OS Windows 10,  Open Project Community Edition   |
+| Environment | Browser Brave 1.85.118 (Chromium 143.0.7499.169), OS Windows 10,  Open Project Community Edition   |
 
 # Screenshots zur Fehlerkonstruktion
 
