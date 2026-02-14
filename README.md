@@ -6,7 +6,7 @@ QA : Fehler, Checklisten, Testfälle
 
 | Kategorie | Details |
 | :--- | :--- |
-| Name | Integer Overflow im Feld "Arbeit" |
+| Name | Integer Overflow im Feld "Work", "Remaining Work" |
 | Priorität | Hoch |
 | GIVEN | Ein Arbeitspaket ist im Bearbeitungsmodus geöffnet; das Feld "Arbeit" ist leer. |
 | WHEN | 1.Der Benutzer gibt den Wert 9999999999999999 (16 Neunen) in das Feld "Work" ein. 2. Der Benurzer beobachtet die automatische Berechnung des Feldes "Remaining Work".3 Der Benutzer klickt auf das Häkchen "Save"|
@@ -16,13 +16,43 @@ QA : Fehler, Checklisten, Testfälle
 
 # Screenshots zur Fehlerkonstruktion
 
-## 1.Zeigt den automatischen Rundungsfehler direkt nach der Dateneingabe in Interface.
+## 1.Zeigt den automatischen Rundungsfehler direkt nach der Dateneingabe in Interface
 
 ![Bug Screenshot_1](bug_overflow_OP_001.png)
 
-## 2.Belegt die dauerhafte Datenkorruption nach dem Speichervorgang trotz Erfolgsmeldung.
+## 2.Belegt die dauerhafte Datenkorruption nach dem Speichervorgang trotz Erfolgsmeldung
 
 ![Bug Screenshot_2](Fehler_001_step_2.png)
+
+# Fehlerbericht OP-002: Inkonsistente Rundungslogik und Präzisionsverlust
+| Kategorie | Details |
+| :--- | :--- |
+| Name | System unterstützt keine Dezimalwerte im Feld "Complete" in % |
+| Priorität | Mittel |
+| GIVEN |  Ein Arbeitspaket ist im Bearbeitungsmodus geöffnet; das Feld "Complete" ist leer |
+| WHEN | 1. Der Benutzer gibt gibt im Feld "% Complete" den Dezimalwert 0.9 ein. 2. Der Benutzer klickt auf die Schaltfläche "Save" |
+| EXPECTED RESULT | Das System akzeptiert und speichert den Dezimalwert ODER Das System rundet mathematisch korrekt auf die nächste Ganzzahl ODER Das System gibt eine Fehlmeldung aus, dass nur Ganzzahlen zulässig sind |
+| ACTUAL RESULT | Das System speichert den Wert als 0. Das Feld "Remaining work" bleibt unverändert. Es findet ein "UI- Flackern" statt : Kurzzeitig wird 1 angezeigt, nach dem Neuladen der Daten vom Server steht dort jedoch wieder 0. |
+
+# Screenshots zur Fehlerkonstruktion
+
+## 1. Zeigt die Dateneingabe in Interface
+
+## 2. Zeigt kurzzeitiges UI - Flickering
+
+## 3. Zeigt die Datenverlust nach Speichern
+
+## 4. Zeigt die gesamte Daten nach Speichern
+
+
+
+
+
+
+
+
+
+
 
 
 
