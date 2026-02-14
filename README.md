@@ -14,7 +14,15 @@ QA : Fehler, Checklisten, Testfälle
 | ACTUAL RESULT | Das Feld "Remaining Work" zeigt den gegründeten Wert 9999999999999998 an (15 Neunen und eine Acht am Ende). Die Zahl wird falsch gerundet/berechnet. 2. Nach dem Speichern wird auch der Wert "Work" überschrieben und auf 9999999999999998 (15 Neunen und eine Acht am Ende) geändert. |
 | Environment | Browser Brave, OS Windows 10,  Open Project Community Edition   |
 
-![Bug Screenshot](bug_overflow_OP_001.png)
+# Screenshots zur Fehlerkonstruktion
+
+## 1.Zeigt den automatischen Rundungsfehler direkt nach der Dateneingabe in Interface.
+
+![Bug Screenshot_1](bug_overflow_OP_001.png)
+
+## 2.Belegt die dauerhafte Datenkorruption nach dem Speichervorgang trotz Erfolgsmeldung.
+
+![Bug Screenshot_2](Fehler_001_step_2.png)
 
 
 
