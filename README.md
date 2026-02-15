@@ -38,11 +38,12 @@ QA : Fehler, Checklisten, Testfälle
 
 ## 1. Zeigt die Dateneingabe in Interface
 
-## 2. Zeigt kurzzeitiges UI - Flickering
+![Bug Screenshot_3](OP_002_scr_1.png)
 
-## 3. Zeigt die Datenverlust nach Speichern
+## 2. Zeigt die Datenverlust nach Speichern
 
-## 4. Zeigt die gesamte Daten nach Speichern
+![Bug Screenshot_4](Op_002-scr-2.png)
+
 
 
 
