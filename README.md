@@ -45,6 +45,22 @@ QA : Fehler, Checklisten, Testfälle
 ![Bug Screenshot_4](Op_002-scr-2.png)
 
 
+# Fehlerbericht OP-003: Benachrichtigungs - Spam (Flood) 
+
+| Kategorie | Details |
+| :--- | :--- |
+| Name UI/UX - Fehler: Übermäßige Anzahl an Benachrichtungen ohne Gruppierung|
+| Priorität | Mittel |
+| GIVEN | Der Benutzer versucht, mehrere Dateien gleichzeitig hochzuladen, die vom System abgelehnt werden |
+| WHEN | Das System generiert für jede einzelne Datei eine separate Toast - Benachrichtigung |
+| EXPECTED RESULT |Das System sollte die Fehler sammeln und in einer in einer zusammengefassten Meldung anzeigen |
+| ACTUAL RESULT | Der Bildschirm wird mit 14 identischen Meldungen überflutet, die den Arbetsbereich verdecken und einzeln geschlossen werden müssen |
+
+# Screenshots zur Fehlerkonstruktion
+
+## 1. Zeigt Spam in Interface
+
+! [BugScreenshot_5](Bug003_Notification_Flood.png)
 
 
 
