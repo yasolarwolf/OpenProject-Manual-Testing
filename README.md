@@ -60,7 +60,7 @@ QA : Fehler, Checklisten, Testfälle
 
 ## 1. Zeigt Spam in Interface
 
-! [BugScreenshot_5](Bug003_Notification_Flood.png)
+![BugScreenshot_5](Bug003_Notification_Flood.png)
 
 
 
