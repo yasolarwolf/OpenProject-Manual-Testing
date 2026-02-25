@@ -49,18 +49,46 @@ QA : Fehler, Checklisten, Testfälle
 
 | Kategorie | Details |
 | :--- | :--- |
-| Name UI/UX - Fehler: Übermäßige Anzahl an Benachrichtungen ohne Gruppierung|
+| Name | UI/UX - Fehler: Übermäßige Anzahl an Benachrichtungen ohne Gruppierung, verursachen Layout - Probleme|
 | Priorität | Mittel |
-| GIVEN | Der Benutzer versucht, mehrere Dateien gleichzeitig hochzuladen, die vom System abgelehnt werden |
-| WHEN | Das System generiert für jede einzelne Datei eine separate Toast - Benachrichtigung |
+| GIVEN | Der Benutzer Befindet sich auf der Upload - Seite |
+| WHEN | Der Benutzer versucht, mehrere Dateien gleichzeitig hochzuladen, die vom System abgelehnt werden.  Das System generiert für jede einzelne Datei eine separate Toast - Benachrichtigung |
 | EXPECTED RESULT |Das System sollte die Fehler sammeln und in einer in einer zusammengefassten Meldung anzeigen |
-| ACTUAL RESULT | Der Bildschirm wird mit 14 identischen Meldungen überflutet, die den Arbetsbereich verdecken und einzeln geschlossen werden müssen |
+| ACTUAL RESULT | Der Bildschirm wird mit identischen Meldungen überflutet, die den Arbetsbereich verdecken und einzeln geschlossen werden müssen. Die Benachrichtungen erzwungen einen unnötigen vertikalen Scrollbalken |
 
 # Screenshots zur Fehlerkonstruktion
 
 ## 1. Zeigt Spam in Interface
 
 ![BugScreenshot_5](Bug003_Notification_Flood.png)
+
+## 2.  Spam wird im Interface mit einem Scrollbalken angezeigt
+
+![BugScreenshot_6](Bug003_Notification_Flood.png)
+
+# Fehlerbericht OP-004: Benachrichtigungs - Falsche Fehlermeldung
+
+| Kategorie | Details |
+| :--- | :--- |
+| Name | Falsche Fehlermeldung beim Hochladen von .php- Dateien|
+| Priorität | Niedrig |
+| GIVEN | Der Benutzer möchte eine Datei im Format .php hochladen |
+| WHEN | Der Benutzer wählt eine einzelne .php-Datei aus und bestätigt den Upload. Das System erkennt das unzulässige Dateiformat |
+| EXPECTED RESULT |Das System sollte melden, dass dieses Typs können nicht hochgeladen werden oder dass Dateiformat .php nicht erlaubt ist |
+| ACTUAL RESULT | Das System gibt die Meldung aus: "You cannot upload folders as an attachment. Please select single files" |
+
+## 1. Zeigt Spam in Interface
+
+![BugScreenshot_5](Bug003_Notification_Flood.png)
+
+
+
+
+
+
+
+
+
 
 
 
