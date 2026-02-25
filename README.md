@@ -64,7 +64,7 @@ QA : Fehler, Checklisten, Testfälle
 
 ## 2.  Spam wird im Interface mit einem Scrollbalken angezeigt
 
-![BugScreenshot_6](Bug003_Notification_Flood.png)
+![BugScreenshot_6](Bug003_2_scroll.png)
 
 # Fehlerbericht OP-004: Benachrichtigungs - Falsche Fehlermeldung
 
